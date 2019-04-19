@@ -169,7 +169,7 @@ class Thipe(object):
     def niceplot(self):
         pass
 
-E = Thipe(X, y_E, rand=45)
+E = Thipe(X, y_E)
 X_train, X_test, y_train, y_test = E.trainy()
 X_train, X_test = E.reducy()
 E.try_model(model=LogisticRegression(), label=['Introvert','Extrovert'])
